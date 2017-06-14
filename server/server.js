@@ -8,7 +8,7 @@ const WebSocketServer = WebSocket.Server;
 // Yes, SSL is required
 const serverConfig = {
     key: process.env.KEY || fs.readFileSync('key.pem'),
-    cert: process.CET.KEY || fs.readFileSync('cert.pem')
+    cert: process.CERT || fs.readFileSync('cert.pem')
 };
 
 // ----------------------------------------------------------------------------------------
